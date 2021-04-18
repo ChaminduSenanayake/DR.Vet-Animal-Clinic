@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Treatment" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="50998a55-c312-4d07-817b-c046ac97d489">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DrVet"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="paymentID" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{paymentID}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT drvet.treatment.`PaymentID`,
+	drvet.treatment.diagnosis,
+	drvet.treatment.description,
+	drvet.treatment.`treatmentCharge`,
+	drvet.pet.`pName`,
+	drvet.treatment.`TID`
+FROM drvet.treatment
+	INNER JOIN drvet.pet ON 
+	 drvet.treatment.`PID` = drvet.pet.`PID`
+	 where  drvet.treatment .paymentID=$P{paymentID}]]>
+	</queryString>
+	<field name="PaymentID" class="java.lang.String"/>
+	<field name="TID" class="java.lang.String"/>
+	<field name="pName" class="java.lang.String"/>
+	<field name="diagnosis" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="treatmentCharge" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="79" uuid="1a9eb13a-c38c-4850-b7dc-88f554f81186"/>
+				<textElement textAlignment="Center">
+					<font size="41"/>
+				</textElement>
+				<text><![CDATA[Treatment Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="30" uuid="6647dca3-bfe6-42a3-a514-c7d6ba1ed102"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[PaymentID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="90" height="30" uuid="64f1d522-7c64-497e-b4fb-c6a605c9e8f6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[TID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="110" height="30" uuid="8fd59f3a-8608-409e-aa5b-86afc83a72d0"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[pName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="190" height="30" uuid="2642947a-fb85-41a0-8550-a1ebedbf867d"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[diagnosis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="200" height="30" uuid="3971e2a0-653b-4e40-9566-fcdd7c0cef18"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="0" width="122" height="30" uuid="c2271c1c-412b-400d-a868-163e6a7452ec"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[TreatmentCharge]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="1" width="90" height="30" uuid="d64f8eee-420e-4452-9607-cbf4a670837c"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PaymentID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="1" width="90" height="30" uuid="220bc3f4-5e65-4f7f-9661-4314ac8eba6c"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="1" width="110" height="30" uuid="00140710-2c48-4723-8060-7404de150a23"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="1" width="190" height="30" uuid="439b8339-da89-4b53-8e1a-19d3619cf96e"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="1" width="200" height="30" uuid="609f69fe-9492-47c1-b3be-8ad0a2b59fe4"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="1" width="122" height="30" uuid="b2283236-3527-4131-9044-7e794898ee4f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{treatmentCharge}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
