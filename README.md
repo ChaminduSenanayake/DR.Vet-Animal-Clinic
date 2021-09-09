@@ -28,8 +28,6 @@ This project has been developed by using JAVA and MYSQL .
 ![image](https://user-images.githubusercontent.com/78223836/132761771-aa71ca7c-3ba7-4051-8c25-b3a63b14233f.png)
 
 # Pet
-![image](https://user-images.githubusercontent.com/78223836/132761806-b14db142-0d00-4cb1-b300-d03a0a3e6eba.png)
-
 * View pet details</br>
 ![image](https://user-images.githubusercontent.com/78223836/132761846-04e8f7b6-4fb7-4cf3-8900-b721d820bb8c.png)
 
