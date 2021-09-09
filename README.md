@@ -15,33 +15,33 @@ This project has been developed by using JAVA and MYSQL .
 * Add New Pet</br>
 ![image](https://user-images.githubusercontent.com/78223836/132761572-a5da6ecb-4084-4967-9eb6-cc483edb3ac3.png)
 
-* View Appointment 
+* View Appointment</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761637-22befb94-1a50-403a-beeb-265b54eabf59.png)
 
 # Payment 
-* Add pet Treatment 
+* Add pet Treatment</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761693-3a54661c-14c4-49e0-ab39-869a8502f8db.png)
 
-* Make payment 
+* Make payment</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761734-1b24f79e-54fc-47bd-96d5-ae00294af52f.png)
 
-**View payment 
+**View payment</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761771-aa71ca7c-3ba7-4051-8c25-b3a63b14233f.png)
 
 # Pet
 ![image](https://user-images.githubusercontent.com/78223836/132761806-b14db142-0d00-4cb1-b300-d03a0a3e6eba.png)
 
-* View pet details
+* View pet details</br>
 ![image](https://user-images.githubusercontent.com/78223836/132761846-04e8f7b6-4fb7-4cf3-8900-b721d820bb8c.png)
 
-* View pet details 
+* View pet details</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761906-6e5dc2da-29fd-4b53-a43a-21073767541f.png)
 
 # Veterinary 
-**View veterinary details 
+* View veterinary details</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132762163-fb993f15-76a5-4d37-9fb2-52fe054707da.png)
 
-* View veterinary schedule details
+* View veterinary schedule details</br>
 ![image](https://user-images.githubusercontent.com/78223836/132762213-f0975a8c-2eaf-4721-be1d-f270d29a9891.png)
 
 # Medicine 
