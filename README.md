@@ -2,7 +2,6 @@
 This project has been developed by using JAVA and MYSQL . 
 
 # Interfaces
-
 * Login Interface</br>
 ![image](https://user-images.githubusercontent.com/78223836/132761317-6441e423-bb92-45a2-91af-7af9b061b722.png)
 
@@ -29,7 +28,6 @@ This project has been developed by using JAVA and MYSQL .
 ![image](https://user-images.githubusercontent.com/78223836/132761771-aa71ca7c-3ba7-4051-8c25-b3a63b14233f.png)
 
 # Pet
-*
 ![image](https://user-images.githubusercontent.com/78223836/132761806-b14db142-0d00-4cb1-b300-d03a0a3e6eba.png)
 
 * View pet details</br>
