@@ -3,16 +3,16 @@ This project has been developed by using JAVA and MYSQL .
 
 # Interfaces
 
-* Login Interface 
+* Login Interface</br>
 ![image](https://user-images.githubusercontent.com/78223836/132761317-6441e423-bb92-45a2-91af-7af9b061b722.png)
 
-* Appointment 
+* Appointment</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761398-29926aaf-625b-465d-bd63-f5d6c5765462.png)
 
-* Add New Owner 
+* Add New Owner</br> 
 ![image](https://user-images.githubusercontent.com/78223836/132761490-2fae6f41-a252-42f4-a8a8-78abba6ff11a.png)
 
-* Add New Pet 
+* Add New Pet</br>
 ![image](https://user-images.githubusercontent.com/78223836/132761572-a5da6ecb-4084-4967-9eb6-cc483edb3ac3.png)
 
 * View Appointment 
